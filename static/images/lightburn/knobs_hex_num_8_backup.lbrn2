@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightBurnProject AppVersion="1.7.03" DeviceName="" FormatVersion="1" MaterialHeight="0" MirrorX="True" MirrorY="True">
+    <VariableText>
+        <Start Value="0"/>
+        <End Value="999"/>
+        <Current Value="0"/>
+        <Increment Value="1"/>
+        <AutoAdvance Value="0"/>
+    </VariableText>
+    <UIPrefs>
+        <Optimize_ByLayer Value="0"/>
+        <Optimize_ByGroup Value="-1"/>
+        <Optimize_ByPriority Value="1"/>
+        <Optimize_WhichDirection Value="0"/>
+        <Optimize_InnerToOuter Value="1"/>
+        <Optimize_ByDirection Value="0"/>
+        <Optimize_ReduceTravel Value="1"/>
+        <Optimize_HideBacklash Value="0"/>
+        <Optimize_ReduceDirChanges Value="0"/>
+        <Optimize_ChooseCorners Value="0"/>
+        <Optimize_AllowReverse Value="1"/>
+        <Optimize_RemoveOverlaps Value="0"/>
+        <Optimize_OptimalEntryPoint Value="1"/>
+        <Optimize_OverlapDist Value="0.025"/>
+    </UIPrefs>
+    <CutSetting type="Cut">
+        <index Value="2"/>
+        <name Value="C02"/>
+        <minPower Value="95"/>
+        <maxPower Value="95"/>
+        <maxPower2 Value="20"/>
+        <speed Value="8"/>
+        <kerf Value="0.254"/>
+        <PPI Value="0"/>
+        <perfLen Value="0"/>
+        <perfSkip Value="0"/>
+        <dotTime Value="1"/>
+        <overscan Value="0"/>
+        <interval Value="0.08"/>
+        <priority Value="0"/>
+        <tabSize Value="0.50038"/>
+        <tabCount Value="1"/>
+        <tabCountMax Value="1"/>
+        <tabSpacing Value="50.038"/>
+    </CutSetting>
+    <Shape Type="Polygon" CutIndex="2" Rx="5.0799999" Ry="5.0799999" N="6">
+        <XForm>1 0 0 1 529.64685 486.18613</XForm>
+    </Shape>
+    <Shape Type="Polygon" CutIndex="2" Rx="19.049999" Ry="19.049999" N="6">
+        <XForm>1 0 0 1 529.64685 486.18613</XForm>
+    </Shape>
+    <Shape Type="Ellipse" CutIndex="2" Rx="9.5250006" Ry="9.5250015">
+        <XForm>1 0 0 1 509.13889 467.69412</XForm>
+    </Shape>
+    <Shape Type="Ellipse" CutIndex="2" Rx="2.5399997" Ry="2.54">
+        <XForm>1 0 0 1 509.13889 467.69412</XForm>
+    </Shape>
+    <Shape Type="Polygon" CutIndex="2" Rx="19.049999" Ry="19.049999" N="6">
+        <XForm>1 0 0 1 488.64688 486.18613</XForm>
+    </Shape>
+    <Shape Type="Ellipse" CutIndex="2" Rx="2.5399997" Ry="2.54">
+        <XForm>1 0 0 1 488.64688 486.18613</XForm>
+    </Shape>
+    <Notes ShowOnLoad="1" Notes="Knob for a #8 hex head nut. I have not adjusted for kerf, so the measurements are 'off.'&#10;&#10;A #8 hex head is 0.348&quot; This file has a 'er' larger number. Cut to fit, or something.&#10;"/>
+</LightBurnProject>

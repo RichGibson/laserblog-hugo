@@ -1,0 +1,109 @@
+# hugo.toml
+baseURL = "https://laserloveandbeer.com/"
+languageCode = "en-us"
+title = "Laser Love and Beer"
+theme = "PaperMod"
+
+# Enable raw HTML in Markdown (needed for WordPress-era posts with inline HTML)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    noClasses = false
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  env = "production"
+  author = "Rich Gibson"
+  description = "My world"
+
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  ShowToc = false
+  ShowRssButtonInSectionTermList = true
+  defaultTheme = "auto"   # auto follows system dark/light preference
+
+  [params.homeInfoParams]
+    Title = "Laser Love and Beer"
+    Content = "Making things with lasers, beer, and curiosity."
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/RichGibson"
+
+# Menu items
+[[menus.main]]
+  identifier = "nav-tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 10
+
+[[menus.main]]
+  identifier = "nav-about"
+  name = "About"
+  url = "/about/about_rich/"
+  weight = 20
+
+[[menus.main]]
+  identifier = "nav-laser"
+  name = "Laser"
+  url = "/categories/laser/"
+  weight = 30
+
+[[menus.main]]
+  identifier = "nav-scaleindependent"
+  name = "ScaleIndependent"
+  url = "/categories/scaleindependent/"
+  weight = 40
+
+[[menus.main]]
+  identifier = "nav-til"
+  name = "TIL"
+  url = "/categories/til/"
+  weight = 50
+
+[[menus.main]]
+  identifier = "nav-maps"
+  name = "Maps"
+  url = "/categories/maps/"
+  weight = 60
+
+[[menus.main]]
+  identifier = "nav-photo"
+  name = "Photo"
+  url = "/photos/"
+  weight = 70
+
+[[menus.main]]
+  identifier = "nav-family"
+  name = "Family"
+  url = "/categories/family/"
+  weight = 80
+
+[[menus.main]]
+  identifier = "nav-data"
+  name = "Data"
+  url = "/categories/data/"
+  weight = 90
+
+[[menus.main]]
+  identifier = "nav-misc"
+  name = "Misc"
+  url = "/categories/misc/"
+  weight = 100

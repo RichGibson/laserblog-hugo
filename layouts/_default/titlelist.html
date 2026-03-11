@@ -1,0 +1,16 @@
+{{- define "main" -}}
+<h1>{{ .Title }}</h1>
+{{- /* NOTE: This is a placeholder for the Pelican titlelist template.
+     It lists all regular pages alphabetically by title.
+     Customise as needed. */ -}}
+<ul>
+  {{- range sort .Site.RegularPages "Title" "asc" }}
+    {{- if not .Draft }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- with .Date }} <small>({{ .Format "2006-01-02" }})</small>{{ end }}
+    {{- with .Params.categories }} — {{ delimit . ", " }}{{ end }}
+  </li>
+    {{- end }}
+  {{- end }}
+</ul>
+{{- end -}}

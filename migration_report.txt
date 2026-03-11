@@ -1,0 +1,173 @@
+======================================================================
+Pelican → Hugo Migration Report
+Source : /Users/richgibson/projects/laserblog
+Target : /Users/richgibson/projects/websites/laserblog-hugo
+======================================================================
+
+[Config] Wrote hugo.toml
+[Layout] Wrote layouts/_default/titlelist.html (placeholder)
+
+[Content] Converting .md files:
+  OK: 1973-1976-were-hard-on-america.md
+  OK: about/about.md
+  OK: about/about_me.md
+  OK: about/about_rich.md
+  OK: about/richresume_100523.md
+  OK: blog-pivot.md
+  OK: computing_infused_objects.md
+  OK: costs.md
+  OK: data/catfish_derby.md
+  OK: drawer_dividers.md
+  OK: electronics_software.md
+  OK: family/1997_first_day_of_school.md
+  OK: fume_extractor.md
+  OK: gigamacro_table.md
+  OK: initial_journey.md
+  OK: inkscape_export.md
+  OK: laser_first_light.md
+  OK: laser_love_and_beer.md
+  OK: laser_move.md
+  OK: laser_photos.md
+  OK: laser_power.md
+  OK: lasercut.md
+  OK: limit_switch_project.md
+  OK: line_drawing.md
+  OK: materials_cardboard_beer.md
+  OK: ogr2ogr_kids.md
+  OK: pelican_title_list.md
+  OK: photo_projects/consent_culture_2012-01-24/index.md
+  IGNORED (was excluded by Pelican): photo_projects/madhouse.md
+  OK [IGNORED→draft]: photo_projects/madhouse.md
+  OK: pinned.md
+  OK: plugs.md
+  OK: projects/calibration.md
+  OK: projects/clothespins.md
+  OK: projects/finn_first_boat.md
+  OK: projects/gitwatch.md
+  OK: projects/heart_rose_words.md
+  OK: projects/knobs.md
+  OK: projects/laser_etch_a_sketch.md
+  OK: projects/lightburn_dimensions.md
+  OK: projects/live_hinge.md
+  OK: projects/moose_bottles.md
+  OK: projects/moose_coins.md
+  OK: projects/nescafe.md
+  OK: projects/projects.md
+  OK: projects/projects_eryck_thanks.md
+  OK: projects/projects_halloween_lantern.md
+  OK: projects/projects_octopus.md
+  OK: resources.md
+  OK: ruida_tube_power_upgrade.md
+  OK: ruida_upgrade.md
+  OK: scaleindependent/about-rich-contact.md
+  OK: scaleindependent/about-rich.md
+  OK: scaleindependent/aging-street-punk-a-poem.md
+  OK: scaleindependent/arcimboldo-in-vienna.md
+  OK: scaleindependent/calibration-ruler-using-bellows.md
+  OK: scaleindependent/cheerful-close-up-nsfw.md
+  OK: scaleindependent/confederate-toponymy.md
+  OK: scaleindependent/counties-of-the-united-states-by-date-established.md
+  OK: scaleindependent/cross-language-searching.md
+  OK: scaleindependent/cv.md
+  OK: scaleindependent/explicit-images.md
+  OK: scaleindependent/gigapan-and-multi-image-photography.md
+  OK: scaleindependent/gigapanning-volcanoes-in-arizona-for-the-nasa-drats.md
+  OK: scaleindependent/gigapans.md
+  OK: scaleindependent/iframe-test.md
+  OK: scaleindependent/jugendstil-at-the-mak.md
+  OK: scaleindependent/kunsthistorisches-vienna.md
+  OK: scaleindependent/laser-cut-grating.md
+  OK: scaleindependent/latest-news.md
+  OK: scaleindependent/looking-at-eyes.md
+  OK: scaleindependent/marketing-postcards.md
+  OK: scaleindependent/multi-image-photography-notes.md
+  OK: scaleindependent/my-old-lab-notebook-site.md
+  OK: scaleindependent/personal-portraits-of-australia.md
+  OK: scaleindependent/playing-geologist-gigapanning-volcanoes-in-arizona-for-the-nasa-drats.md
+  OK: scaleindependent/scale-independent.md
+  OK: scaleindependent/selected-maps.md
+  OK: scaleindependent/showing-images.md
+  OK: scaleindependent/talks-presentations.md
+  OK: scaleindependent/tank-girl-in-the-100-acre-wood.md
+  OK: scaleindependent/test-post.md
+  OK: scaleindependent/the-quartier-21-sessions-a-lossy-compression.md
+  OK: scaleindependent/the-quartier-21-sessions-portraits.md
+  OK: scaleindependent/the-quartier-21-sessions.md
+  OK: scaleindependent/three-fictional-characters-i-identify-with.md
+  OK: scaleindependent/through-the-microscope-transimpedance-amplifier.md
+  OK: scaleindependent/use-exiftool-and-focusdistance-to-determine-pano-groups.md
+  OK: scaleindependent/waiting-for-robots-a-poem-with-photos.md
+  OK: scaleindependent/waiting-for-robots-a-poem.md
+  OK: scaleindependent/welcome-to-my-world.md
+  OK: scaleindependent/wordpress-notes.md
+  OK: scaleindependent/z.md
+  OK: setup_operation.md
+  OK: shop_boxes.md
+  OK: stupid.md
+  OK: tasks.md
+  OK: til/llm/llm.md
+  OK: til/python/inspect.md
+  OK: til/python/lake_level.md
+  OK: til/python/pelican_debug.md
+  OK: til/raspberry_pi/media_server_jellyfin.md
+  OK: til/systems/duplicate_files.md
+  OK: til/systems/shelly_plug.md
+  OK: til/systems/what_is_using_drive.md
+  OK: til/vi/neovim.md
+  OK: til/vi/vim_notes.md
+  OK: titlelist.md
+  OK: tooling/ghost_lines.md
+  OK: tooling/laser_maintenance.md
+  OK: tooling/ruida_lightburn.md
+  OK: work_holding.md
+
+  Total converted : 111
+  Flagged ignored : 1
+  Skipped (assets): 0
+
+[Static] Copying static assets:
+  Copying content/images/ → static/images/  (1093 files)
+  Copying content/img/ → static/img/  (131 files)
+  Copying content/static_files/ → static/static_files/  (8 files)
+  Copying content/tiles/ → static/tiles/  (544 files)
+  Copying content/photo_projects/ → static/photo_projects/  (2421 files)
+  Copying content/about/ → static/about/  (5 files)
+  Copying root asset: .DS_Store → static/.DS_Store
+  Copying root asset: Users-Manual-of-RDC6445G-S-Control-System-V1.5.pdf → static/Users-Manual-of-RDC6445G-S-Control-System-V1.5.pdf
+  Copying root asset: Bingo - Google Sheets.pdf → static/Bingo - Google Sheets.pdf
+  Copying root asset: .ruida_tube_power_upgrade.md.swp → static/.ruida_tube_power_upgrade.md.swp
+  Copying root asset: MW Laser's Guide to Upgrading From Leetro to RuiDa.pdf → static/MW Laser's Guide to Upgrading From Leetro to RuiDa.pdf
+
+[Theme] Installing Ananke theme:
+  Cloned Ananke theme successfully.
+
+======================================================================
+NEXT STEPS
+======================================================================
+
+1. cd /Users/richgibson/projects/websites/laserblog-hugo
+2. If theme clone failed above, run:
+     git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+3. Test the site:
+     hugo serve
+4. Open http://localhost:1313 in your browser.
+
+KNOWN ISSUES TO FIX MANUALLY:
+  - Update baseURL in hugo.toml to your real domain.
+  - Some scaleindependent/ posts contain old WordPress HTML (NextGen gallery
+    shortcodes, external media URLs). These will render as raw HTML but links
+    may be broken.
+  - titlelist.md has a custom layout (layouts/_default/titlelist.html).
+    The placeholder lists pages alphabetically; customise as needed.
+  - Status: hidden pages won't appear in lists but are reachable by URL.
+  - Cover images are stored in params.cover and featured_image. Ananke
+    uses featured_image for the hero image.
+  - Tags and categories are case-sensitive in Hugo. You may want to normalise
+    them (e.g. 'TIL' vs 'til' vs 'Til').
+  - The `about/` directory contains both .md articles and non-article files
+    (PDFs). The PDFs are in static/about/; the .md files are in content/about/.
+  - photo_projects/ is a mix of .md articles and HTML photo gallery assets.
+    The assets are in static/photo_projects/. The madhouse.md and
+    consent_culture index.md are in content/photo_projects/ as articles.
+  - The Pelican `TEMPLATE_PAGES` hack (titlelist.html → list_articles.html)
+    has been replaced by a Hugo layout at layouts/_default/titlelist.html.
