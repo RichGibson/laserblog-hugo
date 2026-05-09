@@ -20,7 +20,7 @@ tags:
 
 
 - [generate token from hugging face](https://huggingface.co/settings/tokens)
-  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
+  hf_REDACTED
 
   To paste in token command-V doesn't work, need to right click and select paste.
   huggingface-cli login
@@ -105,7 +105,7 @@ Now, you can create a CSS file (e.g., `styles.css`) and add these rules to achie
 # OpenAI
 
 - I have an openai account via google
-- secret key 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
+- secret key sk-REDACTED
 
 - check key
 - vi "/Users/richgibson/Library/Application Support/io.datasette.llm/keys.json"
