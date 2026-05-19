@@ -6,6 +6,10 @@ categories:
   - About
 ---
 
+This is my personal projects site. To contact me: Rich.Gibson at gmail.com
+
+---
+
 Software developer with a 'non-functional fixation' that sometimes leads me to 
 interesting discoveries. Co-Author of two O'Reilly Books. <u>Mapping Hacks</u>
 and <u>Google Maps Hacks</u>.
