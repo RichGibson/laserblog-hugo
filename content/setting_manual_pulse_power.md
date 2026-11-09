@@ -9,6 +9,8 @@ tags:
   - alignment
 ---
 
+The control panel lists this setting in ms (milliseconds of pulse length), but it is probably fine to use as a proxy for power.
+
 When aligning the mirrors you want the power as low as you can while still seeing the laser marks on the tape. A pulse of 10 ms is more than enough to mark the tape for mirror alignment.
 
 To set the output power use the control panel:
