@@ -9,7 +9,7 @@ tags:
   - alignment
 ---
 
-When aligning the mirrors you want the power as low as you can while still seeing the laser marks on the tape.
+When aligning the mirrors you want the power as low as you can while still seeing the laser marks on the tape. A setting of 10 is more than enough to mark the tape for mirror alignment.
 
 To set the output power use the control panel:
 
