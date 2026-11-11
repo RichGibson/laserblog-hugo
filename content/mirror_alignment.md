@@ -28,7 +28,7 @@ Cuts were great in some parts of the bed and weak or missing in others. To see
 the pattern I cut the same small grid of 2.5 mm circles at five spots on the bed:
 upper left, lower left, center, upper right and lower right.
 
-![Five-position test](/images/alignment/five_position_test.jpg)
+[![Five-position test](/images/alignment/thumbs/five_position_test.jpg)](/images/alignment/five_position_test.jpg)
 
 Left side cut through, the center cut with a "ghost" circle next to each real
 one, and the right side barely marked. The ghosts are the beam partly clipping
@@ -107,16 +107,16 @@ the upper-left dot.
 
 Upper left alone:
 
-![Upper left pulse](/images/alignment/m1_upper_left_pulse.jpg)
+[![Upper left pulse](/images/alignment/thumbs/m1_upper_left_pulse.jpg)](/images/alignment/m1_upper_left_pulse.jpg)
 
 Lower left added on the same target. Still one mark, a little bigger:
 
-![Both pulses](/images/alignment/m1_both_pulses.jpg)
+[![Both pulses](/images/alignment/thumbs/m1_both_pulses.jpg)](/images/alignment/m1_both_pulses.jpg)
 
 With a ruler for scale (the grid is 5 mm), the combined mark is about 3 mm
 across and the two pulses are within about half a millimeter of each other:
 
-![Both pulses with a ruler](/images/alignment/m1_pulses_ruler.jpg)
+[![Both pulses with a ruler](/images/alignment/thumbs/m1_pulses_ruler.jpg)](/images/alignment/m1_pulses_ruler.jpg)
 
 Mirror 1 is done.
 
@@ -139,7 +139,7 @@ millimeter and worked on height with the 6 o'clock screw. My first guess,
 clockwise, moved the dot the wrong way, so I went counterclockwise until the
 far dot landed on the near one:
 
-![Mirror 2 near and far pulses](/images/alignment/m2_pulses.jpg)
+[![Mirror 2 near and far pulses](/images/alignment/thumbs/m2_pulses.jpg)](/images/alignment/m2_pulses.jpg)
 
 One mark, only a little stretched where the two pulses overlap.
 
@@ -158,7 +158,7 @@ Mirror 3 is in the head. It turns the beam straight down through the lens and
 out the nozzle. Its mount has the same style of screws as mirror 2: three
 knurled adjustment screws with Phillips lock screws between them.
 
-![Mirror 3 mount on top of the head](/images/alignment/m3_mount.jpg)
+[![Mirror 3 mount on top of the head](/images/alignment/thumbs/m3_mount.jpg)](/images/alignment/m3_mount.jpg)
 
 The clue that mirror 3 was the problem: taking the air nozzle off made the
 ghosting go away. The beam was coming down off-center, grazing the inside wall
@@ -194,13 +194,69 @@ good enough.
 
 Same five-position test as at the top, 11:37 pm on November 8:
 
-![Five-position test after alignment](/images/alignment/five_position_after.jpg)
+[![Five-position test after alignment](/images/alignment/thumbs/five_position_after.jpg)](/images/alignment/five_position_after.jpg)
 
 Every position looks the same, and there's no ghosting anywhere. Compare that to
 the first photo, where the right side barely marked.
 
-None of these circles cut all the way through, though, at any position. I don't
-know why yet. Because it's even across the bed, it isn't alignment anymore. It's
-probably speed, power, focus or dirty optics, and that's a separate project.
+None of these circles cut all the way through, at any position. That turned
+out to be the settings: this test was speed 25, power 75 on 1/4" plywood, and
+my earlier tests were slower, stronger and on 1/8".
 
 Mirror alignment is done.
+
+## After alignment: the near corner still cuts weaker
+
+With slower settings on 1/4" plywood, the lower right corner (farthest from the
+tube) cut through and the upper left corner (nearest the tube) didn't, on the
+same sheet with the same focus gauge setting:
+
+[![Material test, upper left](/images/alignment/thumbs/material_upper_left.jpg)](/images/alignment/material_upper_left.jpg)
+
+[![Material test, lower right](/images/alignment/thumbs/material_lower_right.jpg)](/images/alignment/material_lower_right.jpg)
+
+### Focus moves with beam distance
+
+To find where the beam actually focuses, I did a ramp test. I propped a strip
+of plywood at an angle (41 mm above the bed at one end, 7 mm at the other),
+set the nozzle almost touching the high end, and cut a 250 mm line along it at
+each corner. Where the line is thinnest is where the beam is in focus.
+
+[![Ramp test, four corners](/images/alignment/thumbs/ramp_test.jpg)](/images/alignment/ramp_test.jpg)
+
+| Spot | Focus below the nozzle |
+|---|---|
+| Upper left (nearest the tube) | ~17 mm |
+| Lower left | ~22 mm |
+| Upper right | ~22 mm |
+| Lower right (farthest) | ~26 mm |
+
+The farther the beam travels, the lower the focus. My 1" focus gauge is right
+for lower right and about 9 mm off at upper left.
+
+The raw beam changes size too. Tape on mirror 2, one pulse with the gantry near
+the tube and one far: the near mark was bigger and ring-shaped, the far one
+smaller and solid.
+
+[![Beam on mirror 2, near (left) and far (right)](/images/alignment/thumbs/m2_beam_size.jpg)](/images/alignment/m2_beam_size.jpg)
+
+But refocusing didn't fix it. Upper left at 17 mm still didn't cut through. My
+best guess is the beam is uneven close to the tube and evens out as it travels,
+which is common with generic tubes. Cleaning the tube's output window and the
+mirrors didn't change it.
+
+### I was overdriving the tube
+
+While checking, I read the milliamp meter: 17 mA at 50% power, 33 mA at 90%,
+34 mA at 100%. The tube's spec sheet says the working current is **25 mA**,
+which is about 70% power on my machine. I'd been cutting at 75-95%.
+
+LightBurn can cap it: Laser Tools -> Machine Settings -> Max power. Anything
+above the cap runs at the cap. At 80% the meter reads 29 mA; 70% should be
+about 25 mA.
+
+### What I'm doing about it
+
+Nothing fancy. I cut 1/4" in the lower and lower right part of the bed, where
+it works and where it's easier for me to reach anyway. At lower right, 1/4"
+plywood cut through at 6.8 mm/s even at 70%.
